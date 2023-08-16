@@ -1,0 +1,6 @@
+20:28:07,937 DEBUG devpinoyLogger<strong>{1}</strong>:38 - config file loaded
+20:28:07,947 DEBUG devpinoyLogger<strong>{1}</strong>:41 - OR- Object repository file loaded
+20:28:14,007 DEBUG devpinoyLogger<strong>{1}</strong>:44 - Chrome brwoser was launched
+20:28:14,408 DEBUG devpinoyLogger<strong>{1}</strong>:54 - URL launched successfully
+20:28:15,693 DEBUG devpinoyLogger<strong>{1}</strong>:14 - user clicked successfully for bank manager login button
+20:28:15,923 DEBUG devpinoyLogger<strong>{1}</strong>:66 - Browser closed 
