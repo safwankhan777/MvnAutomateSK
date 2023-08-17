@@ -7,14 +7,21 @@ import org.openqa.selenium.TakesScreenshot;
 
 import java.io.File;
 import java.io.IOException;
+import java.security.PublicKey;
 
-public class TestUtils extends TestBase {
+public class TestUtil extends TestBase {
 
     public  static  String screenshotPath;
+    public  static  String screenshotName;
 
-    public void captureScreenshot() throws IOException {
-        File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\error.pnh"));
+
+    public static void captureScreenshot() throws IOException {
+        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        screenshotName = "error";
+        String targetPath = System.getProperty("user.dir") + "/target/surefire-reports/html/" + screenshotName + ".jpg";
+        File targetFile = new File(targetPath);
+        FileUtils.copyFile(srcFile, targetFile);
+        //FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\"+screenshotName+".jpg"));
     }
 
 }
