@@ -21,7 +21,7 @@ public class TestUtil extends TestBase {
         String targetPath = System.getProperty("user.dir") + "/target/surefire-reports/html/" + screenshotName + ".jpg";
         File targetFile = new File(targetPath);
         FileUtils.copyFile(srcFile, targetFile);
-        //FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\"+screenshotName+".jpg"));
+        //FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\"+screenshotName+".jpg")); windows way of capturing screenshot
     }
 
 }
